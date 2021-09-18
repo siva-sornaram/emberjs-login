@@ -1,0 +1,25 @@
+<div class="container">
+
+    <h1>Please Login</h1>
+    <table class = "center">
+        <tr>
+            <td>
+                <label>Username : </label>
+            </td>
+            {{!-- <td><input type="text" name="username"></td> --}}
+            <td>
+                <Input id="username" @value = {{this.user_name}} />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Password : </label>
+            </td>
+            <td>
+                <Input id="password" @value = {{this.password}} type="password" />
+            </td>
+        </tr>
+    </table>
+    {{!-- <button class = "button" style="margin: auto; display:block;" type="button">Login</button> --}}
+    <button type="submit" {{on 'click' this.validate_user}} class="button" style="margin: auto; display:block;">Login</button>
+</div>
