@@ -4,7 +4,7 @@ module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'ember-js-login',
     environment,
-    rootURL: '/',
+    rootURL: '/ember-login',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
